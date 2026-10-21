@@ -19,3 +19,12 @@ save(str.obj, file = "strPenguins.RData")
 # run regression
 model.lm <- lm(body_mass_g ~ flipper_length_mm+sex+island, data = penguins)
 summary(model.lm)
+
+#sam branch graph 
+hist(
+  penguins$flipper_length_mm,
+  main = "Distribution of Penguin Flipper Length",
+  xlab = "Flipper length (mm)",
+  col = "lightblue",
+  border = "white"
+)
