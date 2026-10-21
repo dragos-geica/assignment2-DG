@@ -15,3 +15,7 @@ str(penguins) -> str.obj
 # Save the output in whatever format you want
 save(summary.obj, file = "summaryPenguins.RData")
 save(str.obj, file = "strPenguins.RData")
+
+# run regression
+model.lm <- lm(body_mass_g ~ flipper_length_mm+sex+island, data = penguins)
+summary(model.lm)
